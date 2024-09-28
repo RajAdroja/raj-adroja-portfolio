@@ -6,7 +6,7 @@ function Contact() {
         <h1 className="secondTitle">
             Contact
         </h1>
-        <form action="">
+        <form action="https://formspree.io/f/meojygrr" method='post'>
             <div className="formGroup">
                 <label htmlFor="name" hidden>Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter Name" required />
