@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css'
-import heroImg from '../../assets/fotor-20240916235651  .png'
+import heroImg from '../../assets/fotor-20240916235651_X.png'
 import sun from '../../assets/sun.svg'
 import moon from '../../assets/moon.svg'
 import twitterLight from '../../assets/twitter-light.svg'
@@ -10,6 +10,8 @@ import linkedinLight from '../../assets/linkedin-light.svg'
 import linkedinDark from '../../assets/linkedin-dark.svg'
 import CV from '../../assets/cv.pdf'
 import { useTheme } from '../../common/ThemeContext'
+import instagramIconLight from '../../assets/instagramLight.png'
+import instagramIconDark from '../../assets/instagramDark.png'
 
 function Hero() {
     const {theme, toggleTheme} = useTheme();
@@ -18,6 +20,7 @@ function Hero() {
     const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
     const githubIcon = theme === 'light' ? githubLight : githubDark;
     const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+    const instagramIcon = theme === 'light' ? instagramIconLight : instagramIconDark;
 
 
   return (
@@ -41,21 +44,24 @@ function Hero() {
             </h1>
             <h2>Frontent Developer</h2>
             <span>
-                <a href="https://twitter.com/" target='_blank'>
+                <a href="https://www.instagram.com/raj_adroja6501/" target='_blank'>
+                <img src={instagramIcon} alt="Twitter icon" />
+                </a>
+                <a href="https://x.com/r0adb10ck/" target='_blank'>
                 <img src={twitterIcon} alt="Twitter icon" />
                 </a>
                 
-                <a href="https://github.com/" target='_blank'>
+                <a href="https://github.com/RajAdroja/" target='_blank'>
                 <img src={githubIcon} alt="Github icon" />
                 </a>
 
-                <a href="https://linkedin.com/" target='_blank'>
+                <a href="https://www.linkedin.com/in/raj-d-adroja/" target='_blank'>
                 <img src={linkedinIcon} alt="Linkedin icon" />
                 </a>
 
             </span>
             <p className={styles.description}>
-                With a passion for developing modern React web apps for commercial businesses.
+            Exploring Artificial Intelligence and network engineering
             </p>
             <a href={CV} download>
                 <button className="hover">
